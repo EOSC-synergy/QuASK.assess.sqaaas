@@ -15,58 +15,58 @@ sqa_criteria:
     repos:
       github.com/CERN-IT-INNOVATION/QuASK git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-carmine-slug.sh
-        container: qc.acc_flabby-yellow-dunker
+        - /usr/bin/env sh .sqa/script.pasty-mauve-bongo.sh
+        container: qc.acc_shaggy-pear-burmese
   QC.Doc:
     repos:
       github.com/CERN-IT-INNOVATION/QuASK find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-lime-russel.sh
-        container: qc.doc_sloppy-corn-bee
+        - /usr/bin/env sh .sqa/script.cloudy-heliotrope-whale.sh
+        container: qc.doc_foggy-thistle-slug
       github.com/CERN-IT-INNOVATION/QuASK git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-flax-lemur.sh
-        container: qc.doc_jumpy-copper-angelfish
+        - /usr/bin/env sh .sqa/script.frumpy-pumpkin-oyster.sh
+        container: qc.doc_slaphappy-plum-hornet
       github.com/CERN-IT-INNOVATION/QuASK markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-yellow-oyster.sh
-        container: qc.doc_silly-ivory-tarantula
+        - /usr/bin/env sh .sqa/script.freaky-persimmon-lemming.sh
+        container: qc.doc_baggy-auburn-bird
       github.com/CERN-IT-INNOVATION/QuASK restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-sangria-dunker.sh
-        container: qc.doc_stinky-buff-retriever
+        - /usr/bin/env sh .sqa/script.stealthy-smalt-foxhound.sh
+        container: qc.doc_ugly-linen-dogfish
   QC.Lic:
     repos:
       github.com/CERN-IT-INNOVATION/QuASK licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-aqua-chinchilla.sh
-        container: qc.lic_ready-ruby-otter
+        - /usr/bin/env sh .sqa/script.boozy-tomato-panda.sh
+        container: qc.lic_shaky-denim-snake
   QC.Sec:
     repos:
       github.com/CERN-IT-INNOVATION/QuASK bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-tangerine-angelfish.sh
-        container: qc.sec_pokey-tangerine-mastiff
+        - /usr/bin/env sh .sqa/script.pokey-indigo-uguisu.sh
+        container: qc.sec_gummy-olive-gopher
   QC.Sty:
     repos:
       github.com/CERN-IT-INNOVATION/QuASK flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-cream-dodo.sh
-        container: qc.sty_chummy-harlequin-walrus
+        - /usr/bin/env sh .sqa/script.lanky-linen-reindeer.sh
+        container: qc.sty_whiny-azure-affenpinscher
       github.com/CERN-IT-INNOVATION/QuASK jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-teal-zonkey.sh
-        container: qc.sty_gamy-champagne-turtle
+        - /usr/bin/env sh .sqa/script.scummy-ivory-forest.sh
+        container: qc.sty_homely-brown-dalmatian
   QC.Uni:
     repos:
       github.com/CERN-IT-INNOVATION/QuASK pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-olive-rabbit.sh
-        container: qc.uni_queasy-persimmon-tuatara
+        - /usr/bin/env sh .sqa/script.muzzy-flax-antelope.sh
+        container: qc.uni_stuffy-corn-crocodile
   QC.Ver:
     repos:
       github.com/CERN-IT-INNOVATION/QuASK get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-gold-sloth.sh
-        container: qc.ver_whiny-wheat-uakari
+        - /usr/bin/env sh .sqa/script.hilly-tan-otter.sh
+        container: qc.ver_nippy-cream-hound
 timeout: 5400
