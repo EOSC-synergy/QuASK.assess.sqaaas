@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/CERN-IT-INNOVATION/QuASK &&
-    pytest  --json-report  --json-report-indent 4
+cd github.com/IraitzM/QuASK &&
+    get_git_tags.py
 )

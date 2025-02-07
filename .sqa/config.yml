@@ -1,72 +1,68 @@
 config:
   credentials: []
   project_repos:
-    github.com/CERN-IT-INNOVATION/QuASK:
-      branch: main
-      repo: https://github.com/CERN-IT-INNOVATION/QuASK
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: release/2.2.1
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/IraitzM/QuASK:
+      branch: main
+      repo: https://github.com/IraitzM/QuASK
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/CERN-IT-INNOVATION/QuASK git:
+      github.com/IraitzM/QuASK git:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-mauve-bongo.sh
-        container: qc.acc_shaggy-pear-burmese
+        - /usr/bin/env sh .sqa/script.silly-charcoal-tapir.sh
+        container: qc.acc_craggy-charcoal-dolphin
   QC.Doc:
     repos:
-      github.com/CERN-IT-INNOVATION/QuASK find_doc_files.py:
+      github.com/IraitzM/QuASK find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-heliotrope-whale.sh
-        container: qc.doc_foggy-thistle-slug
-      github.com/CERN-IT-INNOVATION/QuASK git:
+        - /usr/bin/env sh .sqa/script.pretty-black-clam.sh
+        container: qc.doc_bluesy-auburn-penguin
+      github.com/IraitzM/QuASK git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-pumpkin-oyster.sh
-        container: qc.doc_slaphappy-plum-hornet
-      github.com/CERN-IT-INNOVATION/QuASK markdownlint:
+        - /usr/bin/env sh .sqa/script.sleazy-sangria-dormouse.sh
+        container: qc.doc_smelly-xanthic-nightingale
+      github.com/IraitzM/QuASK markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-persimmon-lemming.sh
-        container: qc.doc_baggy-auburn-bird
-      github.com/CERN-IT-INNOVATION/QuASK restructuredtext-lint:
+        - /usr/bin/env sh .sqa/script.stinky-indigo-dhole.sh
+        container: qc.doc_boozy-olivine-havanese
+      github.com/IraitzM/QuASK restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-smalt-foxhound.sh
-        container: qc.doc_ugly-linen-dogfish
+        - /usr/bin/env sh .sqa/script.messy-orchid-avocet.sh
+        container: qc.doc_smelly-razzmatazz-tamarin
   QC.Lic:
     repos:
-      github.com/CERN-IT-INNOVATION/QuASK licensee:
+      github.com/IraitzM/QuASK licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-tomato-panda.sh
-        container: qc.lic_shaky-denim-snake
+        - /usr/bin/env sh .sqa/script.skimpy-rose-oriole.sh
+        container: qc.lic_randy-indigo-alligator
   QC.Sec:
     repos:
-      github.com/CERN-IT-INNOVATION/QuASK bandit:
+      github.com/IraitzM/QuASK bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-indigo-uguisu.sh
-        container: qc.sec_gummy-olive-gopher
+        - /usr/bin/env sh .sqa/script.beady-magenta-skunk.sh
+        container: qc.sec_hasty-maroon-mist
   QC.Sty:
     repos:
-      github.com/CERN-IT-INNOVATION/QuASK flake8:
+      github.com/IraitzM/QuASK flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-linen-reindeer.sh
-        container: qc.sty_whiny-azure-affenpinscher
-      github.com/CERN-IT-INNOVATION/QuASK jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.scummy-ivory-forest.sh
-        container: qc.sty_homely-brown-dalmatian
+        - /usr/bin/env sh .sqa/script.lanky-pumpkin-bat.sh
+        container: qc.sty_randy-magnolia-beetle
   QC.Uni:
     repos:
-      github.com/CERN-IT-INNOVATION/QuASK pytest:
+      github.com/IraitzM/QuASK pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-flax-antelope.sh
-        container: qc.uni_stuffy-corn-crocodile
+        - /usr/bin/env sh .sqa/script.squeaky-sangria-elephant.sh
+        container: qc.uni_wiggy-purple-bloodhound
   QC.Ver:
     repos:
-      github.com/CERN-IT-INNOVATION/QuASK get_git_tags.py:
+      github.com/IraitzM/QuASK get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-tan-otter.sh
-        container: qc.ver_nippy-cream-hound
+        - /usr/bin/env sh .sqa/script.leaky-pink-wombat.sh
+        container: qc.ver_fuzzy-harlequin-heron
 timeout: 5400

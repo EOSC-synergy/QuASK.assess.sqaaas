@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/CERN-IT-INNOVATION/QuASK &&
-    git rev-parse --is-inside-work-tree 
+cd github.com/IraitzM/QuASK &&
+    mdl --json  .
 )

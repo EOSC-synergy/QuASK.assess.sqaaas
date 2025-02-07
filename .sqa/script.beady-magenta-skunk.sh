@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/CERN-IT-INNOVATION/QuASK &&
+cd github.com/IraitzM/QuASK &&
     bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )

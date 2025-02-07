@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/CERN-IT-INNOVATION/QuASK &&
-    get_git_tags.py
+cd github.com/IraitzM/QuASK &&
+    find_doc_files.py --file_type all
 )
