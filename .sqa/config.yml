@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/IraitzM/QuASK git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-charcoal-tapir.sh
-        container: qc.acc_craggy-charcoal-dolphin
+        - /usr/bin/env sh .sqa/script.cranky-persimmon-cattle.sh
+        container: qc.acc_woozy-green-goose
   QC.Doc:
     repos:
       github.com/IraitzM/QuASK find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-black-clam.sh
-        container: qc.doc_bluesy-auburn-penguin
+        - /usr/bin/env sh .sqa/script.wiggy-ultramarine-oyster.sh
+        container: qc.doc_pokey-white-weasel
       github.com/IraitzM/QuASK git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-sangria-dormouse.sh
-        container: qc.doc_smelly-xanthic-nightingale
+        - /usr/bin/env sh .sqa/script.trippy-viridian-antelope.sh
+        container: qc.doc_nippy-teal-skunk
       github.com/IraitzM/QuASK markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-indigo-dhole.sh
-        container: qc.doc_boozy-olivine-havanese
+        - /usr/bin/env sh .sqa/script.homely-cyan-yak.sh
+        container: qc.doc_skimpy-gamboge-mau
       github.com/IraitzM/QuASK restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-orchid-avocet.sh
-        container: qc.doc_smelly-razzmatazz-tamarin
+        - /usr/bin/env sh .sqa/script.frumpy-bistre-wildebeest.sh
+        container: qc.doc_squeaky-chocolate-ladybird
   QC.Lic:
     repos:
       github.com/IraitzM/QuASK licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-rose-oriole.sh
-        container: qc.lic_randy-indigo-alligator
+        - /usr/bin/env sh .sqa/script.messy-aqua-catfish.sh
+        container: qc.lic_queasy-azure-frigatebird
   QC.Sec:
     repos:
       github.com/IraitzM/QuASK bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-magenta-skunk.sh
-        container: qc.sec_hasty-maroon-mist
+        - /usr/bin/env sh .sqa/script.woolly-brown-cheetah.sh
+        container: qc.sec_pretty-wisteria-maltese
   QC.Sty:
     repos:
       github.com/IraitzM/QuASK flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-pumpkin-bat.sh
-        container: qc.sty_randy-magnolia-beetle
+        - /usr/bin/env sh .sqa/script.nerdy-heliotrope-chinook.sh
+        container: qc.sty_stealthy-alizarin-newfoundland
   QC.Uni:
     repos:
       github.com/IraitzM/QuASK pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-sangria-elephant.sh
-        container: qc.uni_wiggy-purple-bloodhound
+        - /usr/bin/env sh .sqa/script.cranky-peach-koala.sh
+        container: qc.uni_gloppy-malachite-binturong
   QC.Ver:
     repos:
       github.com/IraitzM/QuASK get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-pink-wombat.sh
-        container: qc.ver_fuzzy-harlequin-heron
+        - /usr/bin/env sh .sqa/script.skimpy-pink-ray.sh
+        container: qc.ver_stealthy-sapphire-barb
 timeout: 5400
